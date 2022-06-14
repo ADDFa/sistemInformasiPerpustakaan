@@ -1,0 +1,409 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Konten
+ * ------------------------------------------------------------------------------------
+*/
+.content .sidebar {
+    padding: 70px 20px;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Anggota perpustakaan
+ * ------------------------------------------------------------------------------------
+*/
+.buku {
+    background-color: #314961;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 -7px 0 0 #111;
+    grid-area: konten;
+    display: grid;
+    grid-template-areas:
+        'h1 h1'
+        'tambah halaman'
+        'daftarBuku daftarBuku'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 1fr;
+}
+
+.buku h1 {
+    font-family: sansreguler;
+    font-size: 14pt;
+    color: #fff;
+    margin-bottom: 20px;
+    grid-area: h1;
+}
+
+.buku button {
+    display: flex;
+    background-color: #1A2835;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    transition: .3s;
+    grid-area: tambah;
+}
+
+.buku button:hover {
+    cursor: pointer;
+    background-color: #101820;
+}
+
+.buku button p {
+    font-family: sansreguler;
+    font-size: 11pt;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.buku .halaman {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    grid-area: halaman;
+}
+
+.buku .halaman a {
+    text-decoration: none;
+    font-family: sansreguler;
+    color: #fff;
+    background-color: #1A2835;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid rgba(204, 204, 204, .7);
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.buku .halaman a:hover {
+    background-color: #101820;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Tabel anggota perpustakaan
+ * ------------------------------------------------------------------------------------
+*/
+.daftarBuku {
+    grid-area: daftarBuku;
+    margin-top: 20px;
+}
+
+.daftarBuku table {
+    width: 100%;
+    color: #fff;
+}
+
+.daftarBuku table thead th {
+    text-align: center;
+    font-family: sansbold;
+    background-color: #1A2835;
+}
+
+.daftarBuku table thead tr {
+    border-bottom: 1px solid #fff;
+}
+
+.daftarBuku table th,
+.daftarBuku table td {
+    border-right: 1px solid #fff;
+    padding: 5px;
+    font-family: sansreguler;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+
+.daftarBuku table td:first-child {
+    text-align: center;
+    font-family: sansreguler;
+    font-weight: 600;
+}
+
+.daftarBuku table tbody tr:nth-child(odd) {
+    background-color: #26384B;
+}
+
+.daftarBuku table tbody tr:nth-child(even) {
+    background-color: #314961;
+}
+
+.daftarBuku tbody td:last-child {
+    display: flex;
+    border-right: none;
+}
+
+.daftarBuku thead th:first-child {
+    width: 5%;
+}
+
+.daftarBuku thead th:nth-child(3),
+.daftarBuku thead th:nth-child(4),
+.daftarBuku tbody td:nth-child(3),
+.daftarBuku tbody td:nth-child(4) {
+    width: 15%;
+    text-align: center;
+}
+
+.daftarBuku thead th:last-child {
+    width: 10%;
+    border-right: none;
+}
+
+.daftarBuku tbody a {
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 3px 7px;
+    background-color: #1A2835;
+}
+
+.daftarBuku tbody a:hover {
+    cursor: pointer;
+}
+
+.daftarBuku tbody a img {
+    max-width: 20px;
+    max-height: 20px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.daftarBuku tbody a:hover img {
+    opacity: .7;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Toggle tambah anggota
+ * ------------------------------------------------------------------------------------
+*/
+.formToggle {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #232323;
+    border-radius: 10px;
+}
+
+.form,
+.detailUbah {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    animation: opacity .3s;
+}
+
+.form form,
+.detailUbah form {
+    position: absolute;
+    background-color: #26384B;
+    padding: 15px 50px 0 50px;
+    top: 10%;
+    bottom: 20%;
+    overflow: auto;
+    left: 30%;
+    right: 30%;
+    border-radius: 10px;
+}
+
+.form form::-webkit-scrollbar {
+    width: 10px;
+}
+
+.form form::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.form form::-webkit-scrollbar-thumb {
+    background: #232323;
+    border-radius: 0 10px 10px 0;
+}
+
+.form li,
+.detailUbah li {
+    display: grid;
+    grid-template-areas:
+        'label input'
+    ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    margin: 7% 0;
+    line-height: 20px;
+}
+
+.form li:first-child,
+.form li:last-child,
+.detailUbah li:first-child {
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
+    margin-right: -35px;
+    margin-bottom: 0;
+}
+
+.form li:last-child {
+    margin-right: 0;
+    margin-bottom: 50px;
+}
+
+.form li.input-file {
+    display: grid;
+    grid-template-areas:
+        'namaFile'
+        'tombol'
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+}
+
+.form li.input-file .nama-file {
+    grid-area: namaFile;
+    font-family: sansreguler;
+    color: #fff;
+    padding: 30px 0;
+    background: none;
+    border: 1px dashed #999;
+    text-align: center;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.form li.input-file p {
+    grid-area: tombol;
+    color: #000;
+    font-family: sansreguler;
+    font-size: 10pt;
+    padding: 3px 7px;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #3434FE;
+    margin: 5px;
+    justify-self: right;
+    transition: .3s;
+}
+
+.form li.input-file p:hover {
+    cursor: pointer;
+    background-color: #2020FE;
+    color: #fff;
+}
+
+.form li.input-file input[type="file"] {
+    display: none;
+}
+
+.form img,
+.detailUbah img {
+    width: 24px;
+}
+
+.form img:hover,
+.detailUbah img:hover {
+    cursor: pointer;
+}
+
+.form label,
+.form input,
+.detailUbah label,
+.detailUbah input {
+    margin: 0 5px;
+    height: 20px;
+    font-family: sansreguler;
+    font-size: 11pt;
+    font-weight: 450;
+}
+
+.form label,
+.detailUbah label {
+    grid-area: label;
+    color: #fff;
+}
+
+.form input,
+.detailUbah input {
+    grid-area: input;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 1px #93FFDD;
+}
+
+.detailAnggota input {
+    box-shadow: none;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.detailAnggota input:hover {
+    cursor: not-allowed;
+}
+
+.form input:focus,
+.form input:focus,
+.detailUbah input:focus {
+    outline: none;
+    box-shadow: 0 3px 0 0 #00D592;
+}
+
+.form button.simpanBuku {
+    background-color: #93FFDD;
+    padding: 5px 20px;
+    transition: .2s;
+    color: #000;
+}
+
+.form button.simpanBuku:hover {
+    background-color: #00D592;
+    color: #fff;
+}
+
+.ubahAnggota li:last-child {
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.ubahAnggota button {
+    background-color: #78FFD4;
+    padding: 5px 15px;
+    transition: .2s;
+    color: #888;
+}
+
+.ubahAnggota button:hover {
+    background-color: #E4FFF6;
+    color: #000;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

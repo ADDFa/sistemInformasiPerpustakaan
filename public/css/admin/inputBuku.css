@@ -1,0 +1,138 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Navbar input buku
+ * ------------------------------------------------------------------------------------
+*/
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'sidebar inputBook'
+    ;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-area: konten;
+}
+
+.content .sidebar {
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255, 255, 255, .6);
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Judul navbar
+ * ------------------------------------------------------------------------------------
+*/
+.content .side-title {
+    display: flex;
+    align-items: center;
+}
+
+.content .side-title img {
+    width: 50px;
+}
+
+.content .side-title p {
+    font-family: sansbold;
+    padding-left: 10px;
+    color: #fff;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Konten navbar
+ * ------------------------------------------------------------------------------------
+*/
+.content .side-content {
+    margin: 30px 0 0 60px;
+}
+
+.content .side-content li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.content .side-content li:hover {
+    cursor: pointer;
+}
+
+.content .side-content li p {
+    font-family: sansreguler;
+    color: white;
+    padding-left: 15px;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Input buku perpustakaan
+ * ------------------------------------------------------------------------------------
+*/
+.inputBook {
+    padding: 45px 20px;
+}
+
+.inputBook h2 {
+    font-family: sansbold;
+    color: #E17100;
+    font-size: 20px;
+}
+
+.inputBook ul {
+    margin-top: 45px;
+}
+
+.inputBook ul li {
+    font-family: sansreguler;
+    margin-top: 10px;
+    color: #fff;
+    display: grid;
+    grid-template-areas:
+        'label input'
+    ;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: auto;
+}
+
+.inputBook ul li label {
+    grid-area: label;
+}
+
+.inputBook ul li input {
+    font-family: sansreguler;
+    grid-area: input;
+    background: rgba(225, 113, 0, .1);
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    transition: .2s;
+}
+
+.inputBook ul li input:focus {
+    outline: none;
+    background: rgb(225, 113, 0);
+}
+
+.inputBook ul li:last-child {
+    display: flex;
+    justify-content: end;
+    padding-right: 20%;
+}
+
+.inputBook ul li button {
+    font-family: sansbold;
+    border: none;
+    color: #101820;
+    grid-area: input;
+    width: 20%;
+    background: rgba(225, 113, 0, 1);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.inputBook ul li button:hover {
+    cursor: pointer;
+    background: rgba(225, 113, 0, .9);
+    color: rgba(255, 255, 255, .7);
+}

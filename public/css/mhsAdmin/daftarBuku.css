@@ -1,0 +1,75 @@
+/* 
+* ------------------------------------------------------------------------------------
+* Daftar buku
+* ------------------------------------------------------------------------------------
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 2px 0 0 #FF8F1F;
+    background-color: #E17100;
+    transition: .3s;
+    border-radius: 5px;
+    font-family: sansbold;
+}
+
+.header a:hover {
+    box-shadow: none;
+}
+
+.daftar-buku-perpusFT {
+    background-color: rgba(1, 11, 19, .3);
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.daftar-buku-perpusFT h1 {
+    color: #E17100;
+    width: 60%;
+    font-family: sansbold;
+    font-size: 30px;
+}
+
+.daftar-buku-perpusFT table {
+    margin: 30px auto;
+    width: 90%;
+}
+
+.daftar-buku-perpusFT th,
+.daftar-buku-perpusFT td {
+    border-left: 1px solid #eee;
+    padding: 3px 7px;
+}
+
+.daftar-buku-perpusFT th {
+    font-family: sansbold;
+    background-color: #FF8F1F;
+    color: #fff;
+}
+
+.daftar-buku-perpusFT td {
+    font-family: sansreguler;
+    font-size: 11pt;
+}
+
+.daftar-buku-perpusFT td:first-child {
+    text-align: center;
+}
+
+.daftar-buku-perpusFT td:nth-child(even) {
+    background-color: #FFF5EB;
+}
+
+.daftar-buku-perpusFT td:nth-child(odd) {
+    background-color: #FFD6AD;
+}

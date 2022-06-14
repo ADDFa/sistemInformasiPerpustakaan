@@ -1,0 +1,73 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Saat laporan di print
+ * ------------------------------------------------------------------------------------
+*/
+@media print {
+
+    body header,
+    body .sidebar,
+    body footer,
+    body button {
+        display: none;
+    }
+
+    #laporan,
+    #laporan h1 {
+        width: 100%;
+    }
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Data laporan
+ * ------------------------------------------------------------------------------------
+*/
+.laporan {
+    width: 90%;
+    margin: auto;
+}
+
+.laporan h1 {
+    font-family: sansbold;
+    font-size: 20px;
+    color: #E86C00;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Tabel laporan
+ * ------------------------------------------------------------------------------------
+*/
+.laporan table {
+    margin: 30px auto;
+    width: 90%;
+}
+
+.laporan th,
+.laporan td {
+    color: #fff;
+    font-family: sansreguler;
+    border: 1px solid #fff;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.laporan .print {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #fff;
+    font-family: sansreguler;
+    font-size: 10pt;
+    background-color: #1A2835;
+    margin-left: 5%;
+    transition: .3s;
+}
+
+.laporan .print:hover {
+    background-color: #314961;
+    cursor: pointer;
+}

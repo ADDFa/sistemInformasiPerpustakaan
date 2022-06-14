@@ -1,0 +1,332 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Pinjam kembali buku
+ * ------------------------------------------------------------------------------------
+*/
+.buku {
+    background-color: #314961;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 -7px 0 0 #111;
+    grid-area: konten;
+}
+
+.buku .tambah:hover {
+    cursor: pointer;
+}
+
+.buku .tombol-pilih {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buku .pinjam-kembali {
+    width: 20%;
+    display: flex;
+}
+
+.buku .pinjam-kembali a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sansreguler;
+    font-size: 10pt;
+    padding-left: 20px;
+}
+
+.buku .pinjam-kembali a:hover {
+    cursor: pointer;
+}
+
+.buku .pinjam-kembali a:first-child {
+    border-radius: 20px 0 0 20px;
+    border-right: 1px solid #1A2835;
+}
+
+.buku .pinjam-kembali a:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.buku h1 {
+    font-family: sansreguler;
+    font-size: 14pt;
+    color: #E17100;
+    margin-bottom: 20px;
+}
+
+.buku .tombol-pilih a {
+    background-color: #E4FFF6;
+    border: 1px solid #1A2835;
+    color: #000;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.buku .pinjam-kembali a:hover {
+    background-color: #00D592;
+    color: #eee;
+}
+
+.buku .tombol-pilih a {
+    border-radius: 10px;
+    background-color: #1A2835;
+    color: #fff;
+}
+
+.buku .tombol-pilih a:hover {
+    background-color: #314961;
+}
+
+.buku .tambah p {
+    font-family: sansreguler;
+    font-size: 10pt;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Pencarian
+ * ------------------------------------------------------------------------------------
+*/
+.buku .pencarian {
+    text-align: right;
+    margin: 30px 0;
+}
+
+.buku .pencarian label {
+    font-family: sansreguler;
+    font-size: 10pt;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.buku .pencarian input {
+    width: 25%;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 #93FFDD;
+}
+
+.buku .pencarian input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.buku .pencarian input:focus {
+    outline: none;
+    box-shadow: 0 3px 0 0 #00D592;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Popup pinjam kembali buku
+ * ------------------------------------------------------------------------------------
+*/
+.tambah-pinjam-kembali {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: opacity .3s;
+}
+
+.tambah-pinjam-kembali form {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    background-color: #26384B;
+    border-radius: 15px;
+}
+
+.tambah-pinjam-kembali img {
+    width: 24px;
+    margin-bottom: 20px;
+}
+
+.tambah-pinjam-kembali img:hover {
+    cursor: pointer;
+}
+
+.tambah-pinjam-kembali li {
+    display: grid;
+    grid-template-areas:
+        'label input'
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    margin: 20px 0;
+    font-family: sansreguler;
+}
+
+.tambah-pinjam-kembali label,
+.tambah-pinjam-kembali input {
+    margin: 0 5px;
+    height: 20px;
+    font-family: sansreguler;
+    font-size: 11pt;
+    font-weight: 450;
+}
+
+.tambah-pinjam-kembali label {
+    grid-area: label;
+    color: #fff;
+}
+
+.tambah-pinjam-kembali input {
+    grid-area: input;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 1px #93FFDD;
+}
+
+.tambah-pinjam-kembali input:focus {
+    outline: none;
+    box-shadow: 0 3px 0 0 #00D592;
+}
+
+.tambah-pinjam-kembali li:last-child,
+.tambah-pinjam-kembali li:first-child {
+    display: flex;
+    justify-content: end;
+}
+
+.tambah-pinjam-kembali button {
+    background-color: #00D592;
+    border: none;
+    padding: 5px 15px;
+    transition: .2s;
+    border-radius: 5px;
+    color: #fff;
+    margin: 20px 5px 0 0;
+}
+
+.tambah-pinjam-kembali button:hover {
+    background-color: #93FFDD;
+    color: #333;
+    cursor: pointer;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Tabel daftar buku
+ * ------------------------------------------------------------------------------------
+*/
+.daftarBuku table {
+    width: 100%;
+    color: #fff;
+}
+
+.daftarBuku table thead th {
+    text-align: center;
+    font-family: sansbold;
+    background-color: #1A2835;
+}
+
+.daftarBuku table thead tr {
+    border-bottom: 1px solid #fff;
+}
+
+.daftarBuku table th,
+.daftarBuku table td {
+    border-left: 1px solid #fff;
+    padding: 10px;
+    font-family: sansreguler;
+    font-size: 10pt;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.daftarBuku table tbody tr:nth-child(odd) {
+    background-color: #26384B;
+}
+
+.daftarBuku table tbody tr:nth-child(even) {
+    background-color: #314961;
+}
+
+.daftarBuku tbody td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.daftarBuku thead th:first-child {
+    width: 5%;
+}
+
+.daftarBuku tbody a {
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 3px 7px;
+    background-color: #1A2835;
+}
+
+.daftarBuku tbody a:hover {
+    cursor: pointer;
+}
+
+.daftarBuku tbody a img {
+    max-width: 20px;
+    max-height: 20px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.daftarBuku tbody a:hover img {
+    opacity: .7;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Footer pinjam kembali buku
+ * ------------------------------------------------------------------------------------
+*/
+footer {
+    width: auto;
+}
+
+footer .unib,
+footer .contact {
+    width: auto;
+    background-color: #1A2835;
+    padding: 10px 30px;
+}
+
+footer .contact {
+    border-top: 2px solid rgba(255, 255, 255, .6);
+}
+
+footer .unib a,
+footer .contact a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
+    margin-right: 30px;
+}
+
+footer .unib a:hover,
+footer .contact a:hover {
+    color: #fff;
+}

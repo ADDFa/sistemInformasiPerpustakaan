@@ -1,0 +1,168 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Body | login
+ * ------------------------------------------------------------------------------------
+*/
+body {
+    background-color: #101820;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Header login
+ * ------------------------------------------------------------------------------------
+*/
+.header-home {
+    background-image: url('../../img/headerHome/perpus.jpg');
+    width: 100%;
+    height: 276px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, .6);
+}
+
+.header-home img {
+    margin-top: 3%;
+}
+
+.header-home h1 {
+    font-family: niclademo;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Konten login
+ * ------------------------------------------------------------------------------------
+*/
+.login {
+    width: 80%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-areas:
+        'text formLogin'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.login .text h1 {
+    font-family: sansreguler;
+    font-size: 50px;
+    color: #E17100;
+    margin-top: 10%;
+}
+
+.login .text p {
+    font-family: sansreguler;
+    font-size: 11pt;
+    color: #E17100;
+    width: 60%;
+}
+
+.login .formLogin {
+    background-color: #26384B;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    color: #fff;
+}
+
+.login .formLogin h1 {
+    font-family: sansbold;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.login .formLogin ul li {
+    margin: auto;
+    width: 80%;
+}
+
+.login .formLogin label {
+    display: block;
+    font-family: sansreguler;
+    font-size: 13pt;
+}
+
+.login .formLogin input {
+    margin: 10px 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #E17100;
+    width: 100%;
+    color: #fff;
+}
+
+.login .formLogin input:focus {
+    outline: none;
+    border-bottom: 3px solid #E17100;
+}
+
+.login .formLogin button {
+    background-color: #00875d;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11pt;
+    width: 100%;
+    padding: 5px 0;
+    transition: .3s;
+}
+
+.login .formLogin button:hover {
+    cursor: pointer;
+    color: #ccc;
+    background-color: #19d69a;
+}
+
+.login .formLogin ul li>button {
+    margin: 30px auto 0 auto;
+}
+
+.login .formLogin div {
+    text-align: center;
+    margin: 40px 0;
+    font-family: sansreguler;
+    font-size: 10pt;
+}
+
+.login .formLogin span:last-child:hover {
+    cursor: pointer;
+    color: rgb(0, 112, 218);
+    text-decoration: underline;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Footer login
+ * ------------------------------------------------------------------------------------
+*/
+footer {
+    width: auto;
+}
+
+footer .unib,
+footer .contact {
+    width: auto;
+    background-color: #1A2835;
+    padding: 10px 30px;
+}
+
+footer .contact {
+    border-top: 2px solid rgba(255, 255, 255, .6);
+}
+
+footer .unib a,
+footer .contact a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
+    margin-right: 30px;
+}
+
+footer .unib a:hover,
+footer .contact a:hover {
+    color: #fff;
+}

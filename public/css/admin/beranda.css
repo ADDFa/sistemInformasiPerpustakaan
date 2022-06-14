@@ -1,0 +1,94 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Beranda admin
+ * ------------------------------------------------------------------------------------
+*/
+.beranda {
+    display: grid;
+    grid-template-areas:
+        'buku anggota'
+        'pinjam kembali'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    grid-area: konten;
+}
+
+.beranda .jumlahBuku,
+.beranda .jumlahAnggota,
+.beranda .bukuDipinjam,
+.beranda .bukuDikembalikan {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    border-radius: 3px;
+}
+
+.beranda .jumlahBuku p,
+.beranda .jumlahAnggota p,
+.beranda .bukuDipinjam p,
+.beranda .bukuDikembalikan p {
+    font-family: sansbold;
+    font-size: 12pt;
+    color: #fff;
+}
+
+.beranda .jumlahBuku {
+    background-color: #00875D;
+    grid-area: buku;
+}
+
+.beranda .jumlahAnggota {
+    background-color: #A0008A;
+    grid-area: anggota;
+}
+
+.beranda .bukuDipinjam {
+    background-color: #E86C00;
+    grid-area: pinjam;
+}
+
+.beranda .bukuDikembalikan {
+    background-color: #DC0058;
+    grid-area: kembali;
+}
+
+.beranda .jumlahBuku a {
+    background-color: #006847;
+}
+
+.beranda .jumlahAnggota a {
+    background-color: #7B006B;
+}
+
+.beranda .bukuDipinjam a {
+    background-color: #B35300;
+}
+
+.beranda .bukuDikembalikan a {
+    background-color: #AC0045;
+}
+
+.beranda .jumlahBuku a,
+.beranda .jumlahAnggota a,
+.beranda .bukuDipinjam a,
+.beranda .bukuDikembalikan a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 0 0 3px 3px;
+}
+
+.beranda .jumlahBuku a p,
+.beranda .jumlahAnggota a p,
+.beranda .bukuDipinjam a p,
+.beranda .bukuDikembalikan a p {
+    font-family: sansreguler;
+    font-size: 11pt;
+    color: #fff;
+}

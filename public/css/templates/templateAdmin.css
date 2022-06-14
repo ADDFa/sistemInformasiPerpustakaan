@@ -1,0 +1,165 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Body template admin
+ * ------------------------------------------------------------------------------------
+*/
+body {
+    background-color: #101820;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Header template admin
+ * ------------------------------------------------------------------------------------
+*/
+body header {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1A1A18;
+    justify-content: space-between;
+}
+
+body header .unib-logo {
+    display: flex;
+    align-items: center;
+}
+
+body header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+body header a[href="/logout"] {
+    font-family: sansreguler;
+    font-size: 11pt;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 25px;
+    background-color: #AC0045;
+    box-shadow: 0 3px 0 0 #ce276a;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+body header a[href="/Admin/logout"]:hover {
+    box-shadow: none;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Navbar template admin
+ * ------------------------------------------------------------------------------------
+*/
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'sidebar konten'
+    ;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+}
+
+.content .sidebar {
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255, 255, 255, .6);
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Judul navbar
+ * ------------------------------------------------------------------------------------
+*/
+.content .side-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15%;
+}
+
+.content .side-title img {
+    max-width: 30px;
+}
+
+.content .side-title p {
+    font-family: sansbold;
+    color: #E86C00;
+    font-size: 12pt;
+    text-align: center;
+    margin-left: 5%;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Konten navbar
+ * ------------------------------------------------------------------------------------
+*/
+.content .side-content {
+    margin: 30px 0 0 60px;
+}
+
+.content .side-content li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.content .side-content li:hover {
+    cursor: pointer;
+}
+
+.content .side-content li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.content .side-content li a:hover p {
+    color: rgb(232, 108, 0);
+}
+
+.content .side-content li p {
+    font-family: sansreguler;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    transition: .2s;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Footer template admin
+ * ------------------------------------------------------------------------------------
+*/
+footer {
+    width: auto;
+}
+
+footer .unib,
+footer .contact {
+    width: auto;
+    background-color: #1A2835;
+    padding: 10px 30px;
+}
+
+footer .contact {
+    border-top: 2px solid rgba(255, 255, 255, .6);
+}
+
+footer .unib a,
+footer .contact a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
+    margin-right: 30px;
+}
+
+footer .unib a:hover,
+footer .contact a:hover {
+    color: #fff;
+}

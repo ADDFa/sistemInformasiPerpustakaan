@@ -1,0 +1,121 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Body | home
+ * ------------------------------------------------------------------------------------
+*/
+body {
+    background-color: #101820;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Header home
+ * ------------------------------------------------------------------------------------
+*/
+.header-home {
+    background-image: url('/img/headerHome/perpus.jpg');
+    width: 100%;
+    height: 276px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, .6);
+}
+
+.header-home a {
+    text-decoration: none;
+}
+
+.header-home img {
+    margin-top: 3%;
+}
+
+.header-home h1 {
+    font-family: niclademo;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Selamat datang
+ * ------------------------------------------------------------------------------------
+*/
+.welcome {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.welcome h2,
+p {
+    margin-bottom: 1%;
+}
+
+.welcome h2:first-child {
+    font-family: sansbold;
+    font-size: 40px;
+    color: #E17100;
+}
+
+.welcome h2:nth-child(2) {
+    font-family: sansbold;
+    font-size: 40px;
+    color: #FFBE7E;
+    font-weight: bold;
+}
+
+.welcome p {
+    font-family: sansreguler;
+    color: #E17100;
+}
+
+.welcome a {
+    text-decoration: none;
+}
+
+.welcome button {
+    font-family: sansbold;
+    font-size: 20px;
+    background-color: #E17100;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 27px;
+    box-shadow: 0 2px 0 0 #FFBE7E;
+    color: #101820;
+    transition: .1s;
+}
+
+.welcome button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #FFBE7E;
+}
+
+/* 
+ * ------------------------------------------------------------------------------------
+ * Footer home
+ * ------------------------------------------------------------------------------------
+*/
+.footer-home {
+    margin-bottom: 5%;
+}
+
+.footer-home p {
+    font-family: sansbold;
+    font-size: 23px;
+    width: auto;
+    padding-left: 2%;
+    padding-bottom: 10px;
+    color: #E17100;
+    border-bottom: 2px solid rgba(255, 255, 255, .6);
+}
+
+.footer-home .footer-book {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-home .footer-book img {
+    width: 145px;
+    height: 180px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}

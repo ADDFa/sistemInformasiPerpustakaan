@@ -1,0 +1,118 @@
+/* 
+ * ------------------------------------------------------------------------------------
+ * Kartu anggota
+ * ------------------------------------------------------------------------------------
+*/
+.kartu-anggota {
+    padding: 50px;
+    grid-area: konten;
+}
+
+.kartu-anggota h1 {
+    font-family: sansbold;
+    color: #E86C00;
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+.kartu {
+    background-color: #1A2835;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header-kartu {
+    display: flex;
+    align-items: center;
+}
+
+.header-kartu img {
+    width: 40px;
+}
+
+.header-kartu div {
+    text-align: center;
+}
+
+.header-kartu h2,
+.header-kartu p {
+    color: #fff;
+    padding-left: 10px;
+    font-family: sansbold;
+}
+
+.header-kartu p {
+    font-size: 10pt;
+}
+
+.konten-kartu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 5% 0;
+}
+
+.identitas {
+    width: 70%;
+}
+
+.identitas input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #314961;
+    background: none;
+    color: #fff;
+    width: 100%;
+}
+
+.identitas input:focus {
+    outline: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.konten-kartu img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.konten-kartu img:hover {
+    cursor: pointer;
+}
+
+.konten-kartu button {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+    background: #1A2835;
+    color: #fff;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.konten-kartu button:hover {
+    background: #314961;
+    cursor: pointer;
+}
+
+.footer-kartu {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.footer-kartu p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    text-align: center;
+    margin: 20px 0 -5px;
+    color: #fff;
+}

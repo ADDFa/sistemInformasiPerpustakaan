@@ -1,0 +1,163 @@
+/* 
+* ------------------------------------------------------------------------------------
+* Kontak perpus FT UNIB
+* ------------------------------------------------------------------------------------
+*/
+.kontak {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* 
+* ------------------------------------------------------------------------------------
+* Tentang kami & Hubungi kami
+* ------------------------------------------------------------------------------------
+*/
+.kontak div {
+    padding: 30px 40px;
+    width: 50%;
+}
+
+.kontak .tentang-kami {
+    background-color: #B3C0B5;
+    border-radius: 20px 0 0 20px;
+}
+
+.kontak .hubungi-kami {
+    background-color: #47544A;
+    border-radius: 0 20px 20px 0;
+}
+
+.kontak h1 {
+    font-family: sansbold;
+    font-size: 17pt;
+    padding-bottom: 5px;
+    width: 40%;
+    border-bottom: 5px solid #E07000;
+    margin-bottom: 10px;
+}
+
+.kontak p {
+    font-family: sansreguler;
+    font-size: 11pt;
+    text-align: justify;
+}
+
+.kontak li {
+    width: 100%;
+}
+
+/* 
+* ------------------------------------------------------------------------------------
+* Tentang kami
+* ------------------------------------------------------------------------------------
+*/
+
+.kontak .tentang-kami .info {
+    width: 100%;
+    padding: 0;
+    margin: 120px 0 20px 0;
+    display: flex;
+}
+
+.kontak .info li {
+    width: 90%;
+}
+
+.kontak .tentang-kami h1 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.kontak .tentang-kami a {
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    grid-template-areas:
+        'img p'
+    ;
+    grid-template-columns: 1fr 9fr;
+    margin-bottom: 5px;
+}
+
+.kontak .tentang-kami img {
+    grid-area: img;
+    margin: auto 0;
+}
+
+.kontak .tentang-kami .info p {
+    grid-area: p;
+    text-align: left;
+    font-size: 10pt;
+    margin: auto 0;
+}
+
+.kontak .tentang-kami .info p:hover {
+    color: #fff;
+}
+
+.kontak .tentang-kami iframe {
+    border-radius: 5px;
+    border: 1px solid #999;
+    background-color: #fff;
+    width: 40%;
+    height: 100px;
+}
+
+/* 
+* ------------------------------------------------------------------------------------
+* Hubungi kami
+* ------------------------------------------------------------------------------------
+*/
+.kontak .hubungi-kami h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.kontak .hubungi-kami li {
+    font-family: sansreguler;
+}
+
+.kontak .hubungi-kami label {
+    grid-area: label;
+    display: block;
+    color: #fff;
+}
+
+.kontak .hubungi-kami input,
+.kontak .hubungi-kami textarea {
+    grid-area: input;
+    border: none;
+    border-bottom: 3px solid #E07000;
+    width: 100%;
+    margin: 10px 0;
+    background: none;
+    color: #fff;
+}
+
+.kontak .hubungi-kami input:focus,
+.kontak .hubungi-kami textarea:focus {
+    outline: none;
+}
+
+.kontak .hubungi-kami button {
+    float: right;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #E07000;
+    padding: 5px 20px;
+    color: #fff;
+    box-shadow: 0 2px 0 0 #FFBE7E;
+    transition: .2s;
+}
+
+.kontak .hubungi-kami button:hover {
+    box-shadow: none;
+    cursor: pointer;
+    background: #FF850A;
+    color: #000;
+}
